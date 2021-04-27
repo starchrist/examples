@@ -62,6 +62,7 @@ void MinimalClientAutowareNode::minimal_client_callback()
   // https://blog.csdn.net/liuerin/article/details/108104554
   // lambda function from blog, after test, with this call back, still have the problem from rclcpp:
   // [Received invalid sequence number.] Reason is not clear
+  // with new build, this issue suddenly disappear.
   // auto response_received_callback = [this](ServiceResponseFuture future) {
   //     RCLCPP_INFO(this->get_logger(), "Got result: [%d]", future.get()->sum);
   //   };  
